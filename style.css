@@ -4,7 +4,7 @@ body{
 
 }
 
-bgImg{
+.bgImg{
   width:50%;
 }
 #img{
@@ -19,7 +19,6 @@ bgImg{
   justify-content:center;
   top:30%;
   background-color:rgba(0,0,0, 0.5);
-  width:100%;
 }
 .logo{
   max-width:100px;
