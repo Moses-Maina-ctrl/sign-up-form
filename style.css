@@ -1,0 +1,29 @@
+body{
+  margin:0;
+  display:flex;
+
+}
+
+bgImg{
+  width:50%;
+}
+#img{
+  
+  height: 100vh;
+}
+
+.logo-container{
+  position: absolute;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  top:2rem;
+}
+.logo{
+  max-width:100px;
+}
+.logo-text{
+  font-size: 80px;
+  color:white;
+}
