@@ -17,8 +17,9 @@ bgImg{
   display:flex;
   align-items:center;
   justify-content:center;
-
-  top:2rem;
+  top:30%;
+  background-color:rgba(0,0,0, 0.5);
+  width:100%;
 }
 .logo{
   max-width:100px;
