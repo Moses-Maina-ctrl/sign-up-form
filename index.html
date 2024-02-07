@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  <div class="container">
   <div class="bgImg">
     <img src="./assests/bgImage" alt="background image" id="img"/>
     <div class="logo-container" >
@@ -14,9 +15,31 @@
         <span class="logo-text">ODIN</span>
     </div>
   </div>
-  </div>
+</div>
   <div class="text">
       <div></div>
+      <div>
+        <form action="">
+          <div class="formInputs">
+          <label for="firstName">FIRST NAME</label>
+          <input type="text" id="firstName" name="firstName">
+          <label for="lastName">LAST NAME</label>
+          <input type="text" id="lastName" name="lastName">
+          </div>
+          <div class="formInputs">
+          <label for="email">EMAIL</label>
+          <input type="email" id="email">
+          <label for="phoneNumber">PHONE NUMBER</label>
+          <input type="number" id="phoneNumber">
+          </div>
+          <div class="formInputs">
+          <label for="password" >PASSWORD</label>
+          <input type="password" id="password" name="password">
+          <label for="confirmPassword" >CONFIRM PASSWORD</label>
+          <input type="password" id="confirmPassword" name="password">
+          </div>
+        </form>
+      </div>
       <div></div>
   </div>
 </body>
