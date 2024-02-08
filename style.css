@@ -1,32 +1,44 @@
-body{
+*{
   margin:0;
-  display:flex;
+  padding: 0;
 
 }
-.container{
-  width:30%
+@font-face {
+  font-family: 'Norse-Bold';
+  src: url(./assests/Norse-Bold.otf) format('opentype');
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  display:flex;
+  justify-content: center;
+  background-color:#F9FAFB;
+  width:100vw;
+
 }
 .bgImg{
-  width:100%;
-}
-#img{
-  width:100%;
+  background: url("./assests/mark-harpur-K2s_YE031CA-unsplash.jpg");
+  background-size: cover;
+  display:flex;
+  justify-content:center;
+  width:60vw;
   height: 100vh;
+  min-width: 345px;
+  flex-grow:1;
 }
 
 .logo-container{
-  position: absolute;
   display:flex;
   align-items:center;
   justify-content:center;
-  top:30%;
+  width: 100%;
   background-color:rgba(0,0,0, 0.5);
-  width: auto;
 }
 .logo{
   max-width:100px;
 }
 .logo-text{
+  font-family: 'Norse-Bold';
   font-size: 80px;
   color:white;
 }
@@ -34,8 +46,69 @@ body{
 .formInputs{
   display:flex;
   justify-content:space-around;
+  font-size: 15px;
+  gap:50px;
+  padding-right:200px;
+  font-family: Monospace;
+ 
 }
 .text{
   display:flex;
+  flex-direction: column;
+  justify-content:center;
+  gap:50px;
+  align-items: start;
+  width: 60vw;
+  flex-grow:2;
+  margin:0;
 
+}
+label{
+  display:block;
+}
+.form{
+  padding-bottom:50px;
+  background-color:white;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.123);
+  padding: 1.2rem 2vw 3rem 2vw;
+  width:100%
+  
+}
+
+.textContainer1,
+.textContainer2{
+  padding-left:15px;
+}
+.form div{
+  margin-bottom: 10px;
+  padding-top:5px;
+}
+
+.btn{
+  padding: 10px;
+  font-family: Norse-Bold;
+  font-size:25px;
+  background-color: purple;
+  border-radius: 5px;
+  border:none;
+  margin:5px;
+  color:white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.253);
+}
+@media screen and (max-width: 850px){
+  body{
+  flex-direction: column;
+  font-size:0.5rem;
+  }
+  .bgImg{
+    width:100vw;
+    height: 15rem;
+  }
+  .text{
+    width:100vw;
+  }
+  .formInputs{
+    display:flex;
+    flex-direction:column;
+  }
 }
